@@ -247,6 +247,7 @@ class VerifyCode extends Component {
     const {
       autoFocus,
       verifyCodeLength,
+      accessibilityLabel,
 
       containerStyle,
       containerPaddingVertical,
@@ -326,6 +327,7 @@ class VerifyCode extends Component {
             this.onChangeText(text);
             // onInputCompleted(text)
           }}
+          accessibilityLabel={accessibilityLabel}
         />
         <CodeView
           focused={focused}
